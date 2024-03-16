@@ -1,0 +1,151 @@
+
+header {
+    background: #ffffff;
+    padding: 2px 0; /* Adjusted padding */
+    margin-bottom: 2px; /* Adjusted margin-bottom */
+    margin: 0v;
+}
+
+main {
+    position: relative;
+    z-index: 1; /* Ensure the main content appears above the background */
+}
+
+.main {
+    width: 100%;
+    background-position: center;
+    background-size:contain;
+    height: 0vh;
+    margin-top: 2%;
+}
+
+.navbar {
+    width: 1200px;
+    height: 5px;
+    margin: auto;
+}
+
+header img {
+    margin-top: 2px;
+    float: left;
+    width: 300px;
+    margin-left: 2%;
+}
+
+
+.page-title {
+    font-size: 23px;
+    float: center; 
+    margin-left: 32%;
+    margin-top: 1%;
+    color: rgb(199, 207, 199);
+    letter-spacing: 2px;
+    text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+    margin-bottom: 0%;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+    padding: 10pv;
+
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 98%;
+    
+    
+}
+
+ul li {
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 27px;
+    font-size: large;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Andale Mono, monospace; 
+    font-weight: lighter;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+   
+    color: green; /* Adjust the text color on hover */
+}
+
+.active {
+    color: rgb(211, 211, 94); 
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    z-index: 5;
+}
+
+
+  
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+  
+@media (max-width: 768px) {
+}
+    body {
+        font-size: 14px;
+
+    }
+
+    .job-description {
+        font-size: 14px;
+        margin-bottom: 3px;
+        letter-spacing: 0.5px;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        color:rgb(0, 0, 0);
+        font-family: Arial, sans-serif;
+       white-space: pre-wrap;
+    
+    
+    }
+
+    .vac-listing-buttons {
+        display: block;
+        border: 1px solid black;
+        margin-top: 2%;
+        width: 25%;
+        padding: 2px 0;
+        margin-left: 30%;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        background-color: #3d3b3b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 14.5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .vac-listing-buttons:hover {
+        background-color: green;
+    }
+
