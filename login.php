@@ -1,37 +1,53 @@
-
-<?php
-$host = "localhost";
-$user = "root";
-$password = "";
-$db = "user";
-
-$data = mysqli_connect($host, $user, $password, $db);
-
-
-if ($data === false) {
-    die("Connection error");
-}
-
-// Hash the password before storing it in the database
-$hashedPassword = password_hash('1234', PASSWORD_DEFAULT);
-
-// Example registration query
-$username = "admin";
-$sql = "INSERT INTO login (username, password, usertype) VALUES ('$username', '$hashedPassword', 'admin')";
-$result = mysqli_query($data, $sql);
-
-
-mysqli_close($data);
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loginstyle.css" />  
-    <style>
+<title>Login</title>
+</head>
+<main>
+  
+<header>
+  <img src="lag.png" alt="logo"> 
+        </header>
+
+
+			<div class="Form-box">
+			<form action="authenticate.php" method="post">
+			<h1>Login Form</h1>
+
+			<div class="input-box">
+                    <input type="text" name="username" required>
+                    <label>Username:</label>
+                    <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+
+                <div class="input-box">
+                    <input type="password" name="password" required>
+                    <label>Password:</label>
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+
+                <div class="checkbox">
+                    <span>
+                        <input type="checkbox" id="login-checkbox">
+                        <label for="login-checkbox">Remember Me</label>
+                    </span>
+
+                    <h5>Forget password ?</h5>
+                </div>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+</main>
+	<style>
+
+		.body{
+
+			background-image: linear-gradient(to left, rgb(7, 116, 25) , rgb(216, 233, 218));
+
+		}
         .submit-button {
             width: 100%;
             height: 100px;
@@ -63,73 +79,101 @@ mysqli_close($data);
      z-index: 3;
     transition: transform .6s ease, height .2s ease-in-out;
         }
+		main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgb(7, 116, 25) , rgb(216, 233, 218));
+    background-size: cover;
+    background-position: center;
+    overflow:auto;
+}
+
+header img {
+    margin-top: 15px;
+    float: left;
+    width: 320px;
+    margin-left: 3%;
+    margin-bottom: 1%;
+}
+
+.Form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background-color: #009b0d;
+    backdrop-filter: blur(100px);
+    color: rgb(248, 248, 248);
+    font-size: 19px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 16px;
+     margin-left: 37%;
+     margin-bottom:1%;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     z-index: 3;
+    transition: transform .6s ease, height .2s ease-in-out;
+
+}
+.Form-box form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .5s ease;
+    z-index: 7;
+}
+
+.input-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid rgb(5, 2, 2);
+    margin: 40px 0px;
+}
+
+.input-box input{
+    width: 90%;
+    position: absolute;
+    color: rgb(225, 233, 225);
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    left: 25%;
+    top: -2%;
+}
+.input-box label{
+    transition: .4s;
+
+}
+.checkbox{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.goback-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 3%;
+}
+
+.goback-button {
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  
+}
     </style>
 
-    <title>Login Form</title>
-</head>
-<body>
-<script>
-function validateForm() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    
-    if (username === "" || password === "") {
-        document.getElementById("errorMessage").style.display = "block";
-    } else {
-        // If validation passes, you can perform further actions here
-        // For example, you can use JavaScript to send the form data via AJAX
-        alert("Form submitted successfully!");
-    }
-}
-</script>
-
-    <main>
-        <header>
-            <img src="lag.png" alt="logo"> 
-
-        </header>
-        
-        <div class="Form-box">
-            <form action="login.php" method="post" class="Login-form">
-                <h1>Admin Login</h1>
-                <div class="input-box">
-                    <input type="text" name="username" required>
-                    <label>Username:</label>
-                    <ion-icon name="mail-outline"></ion-icon>
-                </div>
-                <div class="input-box">
-                    <input type="password" name="password" required>
-                    <label>Password:</label>
-                    <ion-icon name="lock-closed-outline"></ion-icon>
-                </div>
-                <div class="checkbox">
-                    <span>
-                        <input type="checkbox" id="login-checkbox">
-                        <label for="login-checkbox">Remember Me</label>
-                    </span>
-                    <h5>Forget password ?</h5>
-                </div>
-
-                <div class="submitt-buttons"> 
-                <button type="button" onclick="validateForm()">Submit</button>
-    </div>
-    <div id="errorMessage" style="color: red; display: none;">Please fill in both email and password fields</div>
-</div>
-            <!--<a href="admin.php" class="submit-button"> Submit</a></h5> -->
-
-             </div>
-                </div>
-                <div class="goback-buttons"> 
-                    <a href="index.html" class="goback-button">Go Back &#x2190</a>
-                </div>
-            </form>
-        </div>
-
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script src="script.js"></script>
-    </main>
-
-
-</body>
 </html>
