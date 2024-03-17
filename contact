@@ -109,7 +109,16 @@ font-family: 'Brush Script MT', cursive;
 font-weight: lighter;
 font-size: 75px;
 margin-bottom: 1px;
-margin-top: 1%;
+margin-top: -1%;
+}
+
+
+.description p{
+    font-size: large;
+    margin-top: 2%;
+   margin-left: 3%;
+    margin-left: 26%;
+
 }
         
     </style>
@@ -162,6 +171,9 @@ margin-top: 1%;
     width: 100%;
 }
 
+
+
+
 .content {
     margin-top: 10%;
     width: 100%;
@@ -188,13 +200,6 @@ margin-top: 1%;
 }
 
 
-.description p{
-    font-size: large;
-    margin-top: 2%;
-    margin-left: 26%;
-
-}
-
 h4{
 font-size: medium;
 font-weight: bold;
@@ -213,6 +218,7 @@ margin-top: 8%;
 p{
   font-size: 14px;
   margin-bottom: 2%;
+  margin-left: 20%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
   z-index: 4;
 }
@@ -237,9 +243,9 @@ p{
   }
   
   iframe{
-    width:210%;
+    width:200%;
     height:400px;
-    margin-left: -15%;
+    margin-left: -40%;
     float: center;
     background-color: #fafafa;
     border: 2px solid  rgb(212, 240, 89);
