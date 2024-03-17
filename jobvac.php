@@ -1,114 +1,12 @@
-
+   
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>CAGAYAN DE ORO COLLEGE - PHINMA EDUCATION</title>
-    <link rel="stylesheet" href="jobvac.css" />   
+    <link rel="stylesheet" href="aboutstyle.css" />   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
 
-    <style>
 
-header {
-            height: 120px; /* Adjust the height as needed */
-            width: 100%;
-            background-color: #ffffff;
-            box-shadow: 0 10px 12px 0px #e1e1e1; /* Bottom box-shadow */
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 999; /* Ensure navbar is on top */
-        }
-
-        .main {
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-header img {
-    margin-top: 100px;
-    float: left;
-    width: 320px;
-    margin-left: -3%;
-}
-
-.page-title {
-    font-size: 23px;
-    float: center; 
-    margin-left: 8%;
-    margin-top: 80px;
-    color: rgb(21, 104, 21);
-    letter-spacing: 2px;
-    text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
-    margin-bottom: 0%;
-    margin-right: 10px;
-    white-space: nowrap;
-}
-
-.menu {
-    width: 400px;
-    float: left; 
-    margin-top: 180px;
-    height: -1px;
-    padding: 10pv;
-
-}
-
-ul {
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -60%;
-    
-    
-}
-
-ul li {
-    list-style: none;
-    margin-left: 55px;
-    margin-top: 27px;
-    font-size: large;
-    white-space: nowrap;
-    z-index: 5;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-family: Andale Mono, monospace; 
-    font-weight: lighter;
-    transition: 0.5s ease-in-out;
-    font-weight: bold; 
-    
-} 
-
-.menu ul li a:hover {
-   
-    color: green /* Adjust the text color on hover */
-}
-
-
-.active {
-    color: rgb(211, 211, 94); 
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    z-index: 5;
-}
-
-
-        /* Page content styles */
-        body {
-            margin: 0;
-            padding-top: 100px; /* Adjust according to navbar height */
-        }
-
-        
-    </style>
-</head>
-
-<body>
     <header>
         <div class="main">
             <img src="logo.jpg" alt="logo" class="logo"> 
@@ -118,12 +16,159 @@ ul li a {
                     <li><a href="index.html" class="active">HOME</a></li> 
                     <li><a href="about.html">ABOUT US</a></li>
                     <li><a href="jobvac.php">JOB VACANCIES</a></li> 
-                    <li><a href="contact.html">CONTACT US</a></li> <li><a href="login.php" class="sign-in-button"> <i class="fas fa-user"></i></a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
             </div>
         </div>
     </header>
-  <main>
+        
+        <style>
+        
+        header {
+               height: 120px; /* Adjust the height as needed */
+               width: 100%;
+               background-color: #ffffff;
+               box-shadow: 0 10px 12px 0px #e1e1e1; /* Bottom box-shadow */
+               position: fixed;
+               top: 0;
+               left: 0;
+               z-index: 999; /* Ensure navbar is on top */
+           }
+   
+           .main {
+               width: 90%;
+               margin: 0 auto;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+           }
+   
+   header img {
+       margin-top: 100px;
+       float: left;
+       width: 320px;
+       margin-left: -3%;
+   }
+   
+   .page-title {
+       font-size: 23px;
+       float: center; 
+       margin-left: 8%;
+       margin-top: 80px;
+       color: rgb(21, 104, 21);
+       letter-spacing: 2px;
+       text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+       margin-bottom: 0%;
+       margin-right: 10px;
+       white-space: nowrap;
+   }
+   
+   .menu {
+       width: 400px;
+       float: left; 
+       margin-top: 180px;
+       height: -1px;
+       padding: 10pv;
+   
+   }
+   
+   ul {
+       float: left;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: -50%;
+       
+       
+   }
+   
+   ul li {
+       list-style: none;
+       margin-left: 80px;
+       margin-top: 27px;
+       font-size: large;
+       white-space: nowrap;
+       z-index: 5;
+   }
+   
+   ul li a {
+       text-decoration: none;
+       color: #000000;
+       font-family: Andale Mono, monospace; 
+       font-weight: lighter;
+       transition: 0.5s ease-in-out;
+       font-weight: bold; 
+       
+   } 
+   
+   .menu ul li a:hover {
+      
+       color: green /* Adjust the text color on hover */
+   }
+   
+   
+   .active {
+       color: rgb(211, 211, 94); 
+       text-shadow: 1px 1px 1px rgb(0, 0, 0);
+       z-index: 5;
+   }
+   
+           body {
+               margin: 0;
+               padding-top: 100px; /* Adjust according to navbar height */
+             
+           background-color: rgb(247,247,247);
+           }
+
+           
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+  
+@media (max-width: 768px) {
+}
+
+
+
+
+    .vac-listing-buttons {
+        display: inline-block;
+        border: 1px solid black;
+        margin-top: 2%;
+        width: 25%;
+        padding: 10px 0;
+        margin-left: 30%;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        background-color: #3d3b3b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 14.5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .vac-listing-buttons:hover {
+        background-color: green;
+    }
+
+
+        
+    </style>
+
+
+
+
+    <body>
+
         <div class="job">Job Openings</div>
        
         <section class="section">
@@ -246,7 +291,6 @@ header {
     
     }
 
-
     </style>
         <?php
             // Include the PHP file with backend operations
@@ -274,10 +318,7 @@ foreach ($jobVacancies as $job) {
 
     echo '</div>';
 }
-
-
             ?>
         </section>
-    </main>
 </body>
 </html>
